@@ -1,0 +1,22 @@
+class analysedText(object):
+    
+    def __init__ (self, text):
+        self.fmtText=text.replace('.', '').replace('!', '').replace('.', '').replace(',', '').replace('?', '').lower()
+        
+     
+    
+    def freqAll(self):
+        words = self.fmtText.split()
+        freqMAP= {}
+        for word in set(words):
+            freqMAP[word]=words.count(word)
+        return freqMAP
+        
+    
+    def freqOf(self, word):
+        freqDict=self.freqAll()
+        
+        if word in freqDict:
+            return freqDict[word]
+        else:
+            return 0
