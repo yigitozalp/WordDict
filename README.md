@@ -9,4 +9,3 @@ freqAll - This method should create and return dictionary of all unique words in
 
 freqOf - This method should take a word as an argument and return the number of occurrences of that word in fmtText.
 The skeleton code has been given to you. Docstrings can be ignored for the purpose of the exercise.
-Hint: Some useful functions are replace(), lower(), split(), count()
